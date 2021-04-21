@@ -6,4 +6,6 @@ Plug 'prabirshrestha/async.vim'
 Plug 'wellle/tmux-complete.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-commentary'
+Plug 'kamykn/spelunker.vim'
 call plug#end()

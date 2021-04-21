@@ -10,13 +10,14 @@ let &t_EI = "\<Esc>[2 q"
 
 "Don't display swap or compiled python files in the :Ex command
 let g:netrw_list_hide= '.*\.swp$,.*\.pyc$'
+let g:netrw_banner = 0
 
 hi Folded ctermbg=8
-hi clear SpellBad
-
-hi SpellBad cterm=underline ctermfg=red
-set spell spelllang=en_gb
-set spellfile=~/.vim/en.utf-8.add
+" hi clear SpellBad
+" hi SpellBad cterm=undercurl ctermbg=DarkMagenta
+" set spell spelllang=en_gb
+" set spellfile=~/.vim/en.utf-8.add
+set nospell
 set t_Co=256
 set laststatus=2
 
