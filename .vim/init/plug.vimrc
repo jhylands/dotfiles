@@ -8,4 +8,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 Plug 'kamykn/spelunker.vim'
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+Plug 'tpope/vim-fugitive'
 call plug#end()
