@@ -11,3 +11,4 @@ Plug 'kamykn/spelunker.vim'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'tpope/vim-fugitive'
 call plug#end()
+filetype indent off
