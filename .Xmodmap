@@ -1,0 +1,3 @@
+! Remap escape and backtic 
+keycode   9 = grave notsign grave notsign bar bar bar
+keycode  49 = Escape NoSymbol Escape

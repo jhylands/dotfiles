@@ -34,6 +34,8 @@ hi SyntasticWarning ctermbg=214
 
 set t_Co=256
 set laststatus=2
+set ignorecase
+set smartcase
 
 set number
 set cursorline
