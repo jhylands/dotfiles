@@ -15,7 +15,8 @@ fi
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias branchList='git for-each-ref --sort=committerdate refs/heads/ --format='\''%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'\'''
-alias c='tmux show-buffer|xclip -selection "clipboard" -i'
+# Setup explained here: https://seancoates.com/blogs/remote-pbcopy
+alias c='tmux show-buffer|nc -q1 localhost 2224'
 alias cdj='cd /home/jhylands/Documents'
 alias cdd='cd /home/jhylands/Downloads'
 alias dps='docker ps|echo -e $(sed "s/^\(\w\+\)\s\+\(\(\w\|:\|\.\|\/\)\+\).*\(  .* ago\).*$/\\\\n\\\\e[32m\1\\\\e[0m\\\\t\\\\e[33m\2:\\\\e[34m\4\\\\e[0m/g")'
