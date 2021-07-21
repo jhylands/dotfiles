@@ -52,3 +52,5 @@ alias runsftp="bash ~/Downloads/FileZilla3/bin/filezilla.sh&"
 alias describebranch="git config branch.$(git rev-parse --abbrev-ref HEAD).description"
 alias config='/usr/bin/git --git-dir=/home/jhylands/.cfg/ --work-tree=/home/jhylands'
 alias bat='batcat'
+alias clearswap='find . -type f -name "*.sw[klmnop]" -delete'
+alias tmax='tmux attach -t 0'

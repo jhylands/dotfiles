@@ -2,6 +2,7 @@ set rtp+=~/.fzf
 
 command! LS call ListBuffers()
 command! PutParamTest  r!echo "@pytest.mark.parametrize"
+command Wreally :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 "colorscheme desert
 let &t_SI = "\<Esc>[6 q"
@@ -60,4 +61,5 @@ set shiftwidth=4
 set expandtab
 set nofixendofline
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-autocmd BufWritePost *.py execute ':Black'
+autocmd FileType r setlocal ts=2 sts=2 sw=2
+"autocmd BufWritePost *.py execute ':Black'

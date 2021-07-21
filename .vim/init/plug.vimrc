@@ -10,5 +10,6 @@ Plug 'tpope/vim-commentary'
 Plug 'kamykn/spelunker.vim'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'tpope/vim-fugitive'
+Plug 'lark-parser/vim-lark-syntax'
 call plug#end()
 filetype indent off
