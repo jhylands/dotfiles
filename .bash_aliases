@@ -28,7 +28,7 @@ alias goagain='sudo bash build/install-python-packages.sh; sudo supervisorctl re
 alias grab='export val=$(echo "$list"|tac | sed -n "$line_no p")'
 alias grep='grep --color=auto'
 alias isedalotofthings='sed "s/^\s*\([0-9]\+\)/\\\\e[32m\1\\\\e[0m/g"'
-
+alias push="git push origin \$(git rev-parse --abbrev-ref HEAD)"
 
 # some more ls aliases
 alias l='ls -CF'
